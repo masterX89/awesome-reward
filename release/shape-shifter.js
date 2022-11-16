@@ -1,9 +1,3 @@
-/*
- * Shape Shifter
- * http://www.kennethcachia.com/shape-shifter
- * A canvas experiment
- */
-
 'use strict'
 
 var S = {
@@ -113,7 +107,6 @@ S.Color.prototype = {
 S.UI = (function () {
   var input = document.querySelector('.ui-input'),
     ui = document.querySelector('.ui'),
-    help = document.querySelector('.help'),
     commands = document.querySelector('.commands'),
     overlay = document.querySelector('.overlay'),
     canvas = document.querySelector('.canvas'),
@@ -309,14 +302,6 @@ S.UI = (function () {
     input.addEventListener('input', checkInputWidth)
     input.addEventListener('change', checkInputWidth)
     input.addEventListener('focus', checkInputWidth)
-
-    help.addEventListener('click', function () {
-      overlay.classList.toggle('overlay--visible')
-
-      if (overlay.classList.contains('overlay--visible')) {
-        reset(true)
-      }
-    })
 
     commands.addEventListener('click', function (e) {
       var el, info, demo, url
