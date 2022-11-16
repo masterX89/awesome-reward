@@ -14,7 +14,7 @@ var S = {
       S.UI.simulate(decodeURI(action).substring(i + 3))
     } else {
       S.UI.simulate(
-        '我们是一群|极客|技术探索者|航空人|我们|#icon heart|祖国|#icon heart|航空事业|#countdown 3|祝|1024 大会|圆满成功|#icon thumbs-up|'
+        '我们是|一群|极客|技术探索者|航空人|我们|#icon heart|祖国|#icon heart|航空事业|#countdown 3|祝|1024 大会|圆满成功|#icon thumbs-up'
       )
     }
 
